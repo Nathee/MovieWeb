@@ -1,0 +1,17 @@
+Endpoint returning json of selected movie.
+Returned format is JSON object
+---
+tags:
+  - /movies
+parameters:
+  - in: path
+    type: string
+    name: movie_name
+    required: true
+    description: i.e. Birdman
+responses:
+  200:
+    description: OK
+  404:
+    description: movie not found
+

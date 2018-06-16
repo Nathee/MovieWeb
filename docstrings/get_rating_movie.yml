@@ -1,0 +1,19 @@
+Endpoint for getting movies above provided rating.
+Rating from range <0,10> must be provided and number must be a float.
+---
+tags:
+  - /movies
+parameters:
+  - in: path
+    type: number
+    name: rating
+    required: true
+    description: i.e. 8.5
+responses:
+  200:
+    description: OK
+  400:
+    description: Wrong rating parameter
+  404:
+    description: Movies greater than or equal to provided rating not found
+

@@ -1,0 +1,27 @@
+Endpoint for posting movie.
+Name of the movie must be provided
+---
+tags:
+  - /movies
+parameters:
+  - in: body
+    name: movie
+    required: true
+    description: JSON parameters
+    schema:
+      properties:
+        movieName:
+          type: string
+          description: Name of the movie.
+          example: Pulp Fiction
+        movieData:
+          type: json
+          description: Movie data.
+          example: {year: 1994, genre: Crime, rating: 8.9, actors: [{actor: Samuel L. Jackson, role: Jules Winnfield},
+                                                                    {actor: John Travolta, role: Vincent Vega}]
+        }
+
+responses:
+  201:
+    description: Created
+

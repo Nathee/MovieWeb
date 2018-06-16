@@ -1,0 +1,26 @@
+Endpoint for putting rating of existing movie.
+Name of the movie must be provided
+---
+tags:
+  - /movies
+parameters:
+  - in: path
+    type: string
+    name: movie_name
+    required: true
+    description: i.e. Birdman
+  - in: body
+    name: movie
+    required: true
+    description: JSON parameters
+    schema:
+      properties:
+        rating:
+          type: number
+          description: Ranking of the movie.
+          example: 9.21
+
+responses:
+  201:
+    description: Rating changed
+

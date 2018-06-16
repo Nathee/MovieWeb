@@ -1,0 +1,17 @@
+Endpoint for getting actor information.
+Returning all movies in which provided actor played.
+---
+tags:
+  - /actor
+parameters:
+  - in: path
+    type: string
+    name: name
+    required: true
+    description: i.e. Edward Norton
+responses:
+  200:
+    description: OK
+  404:
+    description: No movies with actor found.
+

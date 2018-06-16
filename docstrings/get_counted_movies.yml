@@ -1,0 +1,9 @@
+Endpoint returning json of counted movies.
+Returned format is JSON with counted movies.
+---
+tags:
+  - /count
+responses:
+  200:
+    description: OK
+

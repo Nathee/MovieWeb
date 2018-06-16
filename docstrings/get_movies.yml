@@ -1,0 +1,8 @@
+Endpoint returning json of all movies.
+Returned format is array of JSON objects
+---
+tags:
+  - /movies
+responses:
+  200:
+    description: OK
