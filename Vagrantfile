@@ -33,6 +33,7 @@ Vagrant.configure("2") do |config|
 		sudo pip3 install flask
 		sudo pip3 install mongoengine
 		sudo pip3 install flasgger
+		sudo pip3 install schema
 		SHELL
     end
 end
